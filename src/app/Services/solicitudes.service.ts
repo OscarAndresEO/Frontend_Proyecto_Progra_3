@@ -15,7 +15,7 @@ export class SolicitudesService {
 
   baseUrl: string;
   constructor(private http:HttpClient) {
-    this.baseUrl=environment.baseUrl;
+    this.baseUrl='https://app-laboradorio-medico-backend.herokuapp.com';
   }
 
   public insertSolicitud(solicitud: any):Observable<any>{

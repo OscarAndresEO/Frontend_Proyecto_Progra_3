@@ -10,7 +10,7 @@ export class ClientesService {
 
   baseUrl: string;
   constructor(private http:HttpClient) {
-    this.baseUrl=environment.baseUrl;
+    this.baseUrl='https://app-laboradorio-medico-backend.herokuapp.com';
   }
 
   public getClientesByNit(nit_cliente: any):Observable<any>{

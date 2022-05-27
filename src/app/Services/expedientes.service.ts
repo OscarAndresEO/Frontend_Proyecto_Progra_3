@@ -9,7 +9,7 @@ import { environment } from 'src/environments/environment';
 export class ExpedientesService {
   baseUrl: string;
   constructor(private http:HttpClient) {
-    this.baseUrl=environment.baseUrl;
+    this.baseUrl='https://app-laboradorio-medico-backend.herokuapp.com';
   }
 
   public getExpedienteByNoExpediente(expediente: any):Observable<any>{

@@ -10,7 +10,7 @@ export class MuestrasService {
 
   baseUrl: string;
   constructor(private http:HttpClient) {
-    this.baseUrl=environment.baseUrl;
+    this.baseUrl='https://app-laboradorio-medico-backend.herokuapp.com';
   }
   public getMuestraByCodigoMuestra(codigoMuestra: any):Observable<any>{
     return this.http.get(`${this.baseUrl}/muestras/${codigoMuestra}`);
